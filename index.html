@@ -128,7 +128,7 @@
         let switchEl = document.getElementById('switch');
         switchEl.onclick=function (e){
             let bgm = document.getElementById("bgm");
-            bgm.volume=50;
+            bgm.volume=“50”;
             bgm.play();
             switchEl.style.setProperty("display","none","important");
             if(!bgm.paused){
