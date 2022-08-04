@@ -97,7 +97,7 @@
     </div>
 
     <canvas id="heart"></canvas>
-    <audio src="bgm.mp3" id="bgm" volume=“70”></audio>
+    <audio src="bgm.mp3" id="bgm"></audio>
 </div>
 
 <script src="heart.js"></script>
@@ -128,7 +128,7 @@
         let switchEl = document.getElementById('switch');
         switchEl.onclick=function (e){
             let bgm = document.getElementById("bgm");
-            bgm.volume=0.3;
+            bgm.volume=30;
             bgm.play();
             switchEl.style.setProperty("display","none","important");
             if(!bgm.paused){
